@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Result Management System</title>
+
+    <link rel="stylesheet" href="students_result.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Student Result Management System</h1>
+
+        <h3>Enter Student Information</h3>
+
+        <input type="text" id="name" placeholder="Student Name">
+
+        <input type="number" id="math" placeholder="Mathematics Marks">
+
+        <input type="number" id="science" placeholder="Science Marks">
+
+        <input type="number" id="computer" placeholder="Computer Marks">
+
+        <br>
+
+        <button id="addBtn">Add Student</button>
+
+        <button id="generateBtn">Generate Student List</button>
+
+        <p id="result"></p>
+
+        <h3>Student Records</h3>
+
+        <table id="studentTable" style="display: none;">
+
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Total</th>
+                    <th>Percentage</th>
+                    <th>Grade</th>
+                </tr>
+            </thead>
+
+            <tbody id="studentList"></tbody>
+
+        </table>
+
+    </div>
+
+    <script src="students_result.js"></script>
+
+</body>
+</html>
