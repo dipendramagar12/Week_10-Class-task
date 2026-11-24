@@ -1,18 +1,15 @@
-
 let count = 0;
 
-document.getElementById("clickBtn").addEventListener("click", function() {
+const heading = document.getElementById("heading");
+const message = document.getElementById("message");
 
-    count++;
+document.getElementById("clickBtn").addEventListener("click", function () {
+  count++;
+  heading.textContent = "Button Clicked: " + count;
 
-    document.getElementById("heading").textContent =
-        "Button Clicked: " + count;
-
-    if (count === 10) {
-
-        document.getElementById("message").textContent =
-            "You have clicked 10 times!";
-
-    }
-
+  if (count === 10) {
+    message.textContent = "You have clicked 10 times!";
+  } else {
+    message.textContent = "";
+  }
 });

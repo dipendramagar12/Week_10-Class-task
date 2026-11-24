@@ -1,20 +1,22 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Q10 - Grade Calculator</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Q10 Grade Calculator</title>
+  <style>
+    body { font-family: Arial, sans-serif; text-align: center; padding-top: 60px; }
+    input { padding: 8px; font-size: 16px; }
+    button { padding: 9px 18px; font-size: 16px; cursor: pointer; }
+    #result { margin-top: 20px; font-size: 20px; font-weight: bold; }
+  </style>
 </head>
 <body>
+  <h1>Simple Grade Calculator</h1>
+  <input type="number" id="marks" placeholder="Enter marks">
+  <button id="calcBtn">Calculate Grade</button>
+  <p id="result"></p>
 
-    <h1>Simple Grade Calculator</h1>
-
-    <input type="number" id="marks" placeholder="Enter your marks">
-
-    <button id="calculateBtn">Calculate Grade</button>
-
-    <p id="result"></p>
-
-    <script src="Q10.js"></script>
-
+  <script src="Q10.js"></script>
 </body>
 </html>

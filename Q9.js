@@ -1,22 +1,17 @@
+const numbersDiv = document.getElementById("numbers");
 
-document.getElementById("generateBtn").addEventListener("click", function() {
+function generateNumbers() {
+  let html = "";
 
-    let output = "";
-
-    for (let i = 1; i <= 20; i++) {
-
-        if (i % 2 === 0) {
-
-            output += "<span style='color: blue;'>" + i + " </span>";
-
-        } else {
-
-            output += "<span style='color: red;'>" + i + " </span>";
-
-        }
-
+  for (let i = 1; i <= 20; i++) {
+    if (i % 2 === 0) {
+      html += '<span class="even">' + i + "</span> ";
+    } else {
+      html += '<span class="odd">' + i + "</span> ";
     }
+  }
 
-    document.getElementById("result").innerHTML = output;
+  numbersDiv.innerHTML = html;
+}
 
-});
+document.getElementById("generateBtn").addEventListener("click", generateNumbers);

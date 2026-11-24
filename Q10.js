@@ -1,46 +1,33 @@
+function calculateGrade(marks) {
+  if (marks >= 90) {
+    return "A+";
+  } else if (marks >= 80) {
+    return "A";
+  } else if (marks >= 70) {
+    return "B";
+  } else if (marks >= 60) {
+    return "C";
+  } else if (marks >= 50) {
+    return "D";
+  } else {
+    return "F";
+  }
+}
 
-document.getElementById("calculateBtn").addEventListener("click", function() {
+document.getElementById("calcBtn").addEventListener("click", function () {
+  const input = document.getElementById("marks").value;
+  const result = document.getElementById("result");
 
-    let marksInput = document.getElementById("marks").value;
-    let marks = Number(marksInput);
+  if (input === "") {
+    result.textContent = "Please enter marks";
+    return;
+  }
 
-    let grade;
+  const marks = Number(input);
 
-    if (marksInput === "") {
-
-        grade = "Please enter marks";
-
-    } else if (marks < 0 || marks > 100) {
-
-        grade = "Invalid Marks";
-
-    } else if (marks >= 90) {
-
-        grade = "A+";
-
-    } else if (marks >= 80) {
-
-        grade = "A";
-
-    } else if (marks >= 70) {
-
-        grade = "B";
-
-    } else if (marks >= 60) {
-
-        grade = "C";
-
-    } else if (marks >= 50) {
-
-        grade = "D";
-
-    } else {
-
-        grade = "F";
-
-    }
-
-    document.getElementById("result").textContent =
-        "Your Grade: " + grade;
-
+  if (marks < 0 || marks > 100) {
+    result.textContent = "Invalid Marks";
+  } else {
+    result.textContent = "Grade: " + calculateGrade(marks);
+  }
 });

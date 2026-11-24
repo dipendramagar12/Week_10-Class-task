@@ -1,18 +1,15 @@
+function changeColor(color) {
+  document.body.style.backgroundColor = color;
+}
 
-document.getElementById("red").addEventListener("click", function() {
-
-    document.body.style.backgroundColor = "red";
-
+document.getElementById("redBtn").addEventListener("click", function () {
+  changeColor("red");
 });
 
-document.getElementById("green").addEventListener("click", function() {
-
-    document.body.style.backgroundColor = "green";
-
+document.getElementById("greenBtn").addEventListener("click", function () {
+  changeColor("green");
 });
 
-document.getElementById("blue").addEventListener("click", function() {
-
-    document.body.style.backgroundColor = "blue";
-
+document.getElementById("blueBtn").addEventListener("click", function () {
+  changeColor("blue");
 });

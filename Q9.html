@@ -1,18 +1,22 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Q9 - Number Generator</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Q9 Display Numbers</title>
+  <style>
+    body { font-family: Arial, sans-serif; text-align: center; padding-top: 60px; }
+    button { padding: 10px 24px; font-size: 16px; cursor: pointer; }
+    #numbers { margin-top: 24px; font-size: 22px; }
+    .even { color: blue; font-weight: bold; }
+    .odd { color: red; }
+  </style>
 </head>
 <body>
+  <h1>Display Numbers Using DOM</h1>
+  <button id="generateBtn">Generate Numbers</button>
+  <div id="numbers"></div>
 
-    <h1>Generate Numbers</h1>
-
-    <button id="generateBtn">Generate Numbers</button>
-
-    <div id="result"></div>
-
-    <script src="Q9.js"></script>
-
+  <script src="Q9.js"></script>
 </body>
 </html>
